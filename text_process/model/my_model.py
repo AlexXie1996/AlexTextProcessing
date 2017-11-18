@@ -27,7 +27,7 @@ class MyModel(object):
 	def relative_words(self, word):
 		"""
 		"""
-		r = {i:self.predict_proba(i, word)-0.9*np.log(j.count) for i,j in 				self.model.wv.vocab.items()}
+		r = {i:self.predict_proba(i, word)-0.9*np.log(j.count) for i,j in self.model.wv.vocab.items()}
 		return Counter(r).most_common()
 
 	def keywords(self, s):
