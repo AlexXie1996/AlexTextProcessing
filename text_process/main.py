@@ -89,7 +89,7 @@ class RelativeWordsPanel(wx.Panel):
 		# comboBox  
 		self.numlist = ['5', '7', '10', '20']  
 		self.lblselnum = wx.StaticText(self, label="Select relatives num:", pos=(20, 125))    
-		self.boxselnum = wx.ComboBox(self, pos=(175, 120), size=(95, -1), 					choices=self.numlist,style=wx.CB_DROPDOWN)  		
+		self.boxselnum = wx.ComboBox(self, pos=(175, 120), size=(95, -1), choices=self.numlist,style=wx.CB_DROPDOWN)  		
 		self.boxselnum.SetSelection(0)
 		self.keynums = int(self.numlist[0])
 		self.Bind(wx.EVT_COMBOBOX, self.EvtComboBox, self.boxselnum)  
